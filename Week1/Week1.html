@@ -1,0 +1,90 @@
+<!--Week 1 HTML Coding Assignment-->
+<!--Create a website using only HTML-->
+<!--At least 3 pages with links to navigate between all pages present on each page-->
+<!--2 different size headers, a list, 3 images, a table, and a form-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Assignment</title>
+    <link rel="stylesheet" href="Week1styles.css">
+</head>
+<body>
+    <header>
+        <h1>MotoGP Legends</h1>
+    </header>
+    <div class="pictures">
+        <div class="wrapper">
+            <img class="racepicture" src="https://cdn-1.motorsport.com/images/amp/254Nymn0/s1000/motogp-catalan-gp-2023-jorge-m-2.jpg" width="500" > <br>    
+            <h2>This picture is from the Catalan GP in Barcelona, 2023</h2>
+        </div>    
+    </div>        
+    <!--This picture had a short url, so I didn't download it to my computer-->
+    <main>
+        <p>
+            MotoGP is a very exciting sport. On each page below there are some quick facts about three different riders.
+        </p>
+
+        <p>
+            Some quick statitistics about these Incredible Riders:
+        </p>
+<!--Gonna go ahead and say I'm not great at tables, this took like twenty minutes-->        
+        <div id="stats">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Valentino</th>
+                    <th>Marc</th>
+                    <th>Fransesco</th>
+                </tr>
+                <tr>
+                    <td>Pole Positions</td>
+                    <td>55</td>
+                    <td>64</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Podium Standings</td>
+                    <td>235</td>
+                    <td>101</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Race Wins</td>
+                    <td>89</td>
+                    <td>59</td>
+                    <td>18</td>
+                </tr>
+            </table>
+        </div>
+       
+
+    </main>
+<!--Links to pages about the three riders--> 
+    <div class="links">
+        <a href="Page2.html">Valentino Rossi</a> <br>  
+        <a href="Page3.html">Marc Marquez</a> <br>
+        <a href="Page4.html">Fransesco Bagnaia</a> <br>
+    </div>    
+    
+    <p>
+        Pick your favorite rider below!
+    </p>
+
+    <div id="form">
+        <form>
+            <input type="text" name="firstname" placeholder="First Name"> <br>
+            <input type="text" name="lastname" placeholder="Last Name"> <br>
+            <br>
+            Rider preference: <br>
+            <input type="radio" name="rider" value="Valentino"> Valentino <br>
+            <input type="radio" name="rider" value="Marc"> Marc <br>
+            <input type="radio" name="rider" value="Fransesco"> Fransesco <br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+<!--Hint: There's no wrong answer, they're all great.-->
+</body>
+</html>
